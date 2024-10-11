@@ -1,0 +1,118 @@
+.hero-section {
+  background-color: #014e56;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.talent {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: left;
+  color: #f67e7e;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 445px;
+}
+
+.right-hero p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.right-hero span {
+  border: none;
+  height: 4px;
+  width: 50px;
+  background-color: #79c8c7;
+  margin-bottom: 79px;
+}
+
+.hero-section {
+  background-image: url("../../images/hero-img1.png");
+  background-repeat: no-repeat;
+  background-size: 100px 200px;
+  background-position: left top;
+}
+
+.hero {
+  background-image: url("../../images/hero-img2.png");
+  background-repeat: no-repeat;
+  background-size: 358px 100px;
+  background-position: right bottom;
+  padding-bottom: 276px;
+}
+
+@media (max-width: 1013px) {
+  .hero-section {
+    background-image: none;
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero {
+    background-position: bottom;
+    padding-bottom: 236px;
+  }
+  .hero h1 {
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+    padding-bottom: 24px;
+    max-width: 350px;
+  }
+  .right-hero span {
+    display: none;
+  }
+  .right-hero p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .talent {
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+    color: #f67e7e;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-bottom: 200px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 18px;
+    max-width: 230px;
+  }
+  .talent {
+    font-size: 40px;
+    line-height: 40px;
+    color: #f67e7e;
+  }
+  .right-hero p {
+    text-align: center;
+    max-width: 327px;
+  }
+}

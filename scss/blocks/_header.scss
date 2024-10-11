@@ -1,0 +1,83 @@
+.site-header {
+  background-color: #014e56;
+  color: white;
+}
+
+.header ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+button {
+  padding: 9px 33px 11px 32px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  background-color: transparent;
+  color: white;
+  font-family: "Livvic";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  cursor: pointer;
+}
+
+button:hover {
+  padding: 9px 33px 11px 32px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  background-color: white;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 73px;
+  padding-bottom: 129px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  cursor: pointer;
+}
+
+.hamb {
+  display: none;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .left-header img {
+    width: 128px;
+  }
+  .header {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 720px) {
+  .button,
+  ul {
+    display: none;
+  }
+  .hamb {
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+  .header {
+    padding: 48px;
+    padding-bottom: 80px;
+  }
+}
