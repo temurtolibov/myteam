@@ -3,12 +3,9 @@
 }
 
 .build-box h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
   color: white;
   max-width: 445px;
+  @include textStyle(700, 48px, 48px, left);
 }
 
 .build-span {
@@ -23,33 +20,24 @@
 }
 
 .com-text h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
+  @include textStyle(700, 18px, 28px, left);
   color: #f67e7e;
 }
 
 .com-text p {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 25px;
-  text-align: left;
   color: white;
   opacity: 80%;
   padding-top: 16px;
+  @include textStyle(600, 15px, 25px, left);
 }
 
 .component-1 {
-  display: flex;
-  align-items: center;
+  @include flexStyle(flex, center, start);
   column-gap: 23px;
 }
 
 .build-box {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+  @include flexStyle(flex, start, space-between);
   padding-top: 54px;
   padding-bottom: 140px;
 }
@@ -70,9 +58,8 @@
     text-align: center;
   }
   .build-box h2 {
-    font-size: 32px;
-    line-height: 32px;
     padding-bottom: 64px;
+    @include textStyle(700, 32px, 32px, left);
   }
   .block {
     padding-left: 80px;

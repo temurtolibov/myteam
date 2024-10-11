@@ -4,39 +4,27 @@
 }
 
 .hero h1 {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100px;
-  text-align: left;
   max-width: 600px;
+  @include textStyle(700, 100px, 100px, left);
 }
 
 .talent {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100px;
-  text-align: left;
   color: #f67e7e;
+  @include textStyle(700, 100px, 100px, left);
 }
 
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexStyle(flex, center, space-between);
 }
 
 .right-hero {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  @include flexStyle(flex, start, space-between);
   max-width: 445px;
 }
 
 .right-hero p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  text-align: left;
+  @include textStyle(600, 18px, 28px, left);
 }
 
 .right-hero span {
@@ -75,11 +63,9 @@
     padding-bottom: 236px;
   }
   .hero h1 {
-    font-size: 64px;
-    line-height: 56px;
-    text-align: center;
     padding-bottom: 24px;
     max-width: 350px;
+    @include textStyle(700, 64px, 56px, center);
   }
   .right-hero span {
     display: none;
@@ -89,9 +75,7 @@
     text-align: center;
   }
   .talent {
-    font-size: 64px;
-    line-height: 56px;
-    text-align: center;
+    @include textStyle(700, 64px, 56px, center);
     color: #f67e7e;
   }
 }
@@ -101,10 +85,9 @@
     padding-bottom: 200px;
   }
   .hero h1 {
-    font-size: 40px;
-    line-height: 40px;
     padding-bottom: 18px;
     max-width: 230px;
+    @include textStyle(700, 40px, 40px, center);
   }
   .talent {
     font-size: 40px;

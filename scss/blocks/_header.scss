@@ -4,10 +4,7 @@
 }
 
 .header ul li a {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  text-align: left;
+  @include textStyle(600, 18px, 28px, left);
 }
 
 button {
@@ -17,11 +14,8 @@ button {
   background-color: transparent;
   color: white;
   font-family: "Livvic";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  text-align: left;
   cursor: pointer;
+  @include textStyle(600, 18px, 28px, left);
 }
 
 button:hover {
@@ -35,6 +29,7 @@ button:hover {
 .header {
   display: flex;
   justify-content: space-between;
+  @include flexStyle(flex, start, space-between);
   padding: 73px;
   padding-bottom: 129px;
 }
