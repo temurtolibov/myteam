@@ -1,0 +1,53 @@
+.ready {
+  background-color: #f67e7e;
+  color: black;
+  background-image: url("../images/bg-ready-section.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.ready-iteams {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  @include flexStyle(flex, start, space-between);
+}
+
+.ready-btn {
+  border: 2px solid black;
+  color: black;
+  font-family: "Livvic";
+}
+
+.ready-iteams h2 {
+  @include textStyle(700, 48px, 48px, left);
+}
+
+@media (max-width: 983px) {
+  .ready-iteams {
+    @include textStyle(700, 32px, 32px, left);
+  }
+}
+
+@media (max-width: 710px) {
+  .ready-iteams {
+    @include flexStyle(flex, center, center);
+    padding-bottom: 76px;
+  }
+  .ready-iteams h2 {
+    max-width: 327px;
+    @include textStyle(700, 32px, 32px, center);
+  }
+  .div-btn {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+  .ready {
+    background-size: 200px;
+  }
+}
+
+@media (max-width: 523px) {
+  .ready-iteams {
+    flex-direction: column;
+  }
+}

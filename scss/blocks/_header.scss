@@ -27,16 +27,13 @@ button:hover {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   @include flexStyle(flex, start, space-between);
   padding: 73px;
   padding-bottom: 129px;
 }
 
 .left-header {
-  display: flex;
-  align-items: center;
+  @include flexStyle(flex, center, start);
   column-gap: 80px;
 }
 

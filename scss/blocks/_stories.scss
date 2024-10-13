@@ -1,0 +1,78 @@
+.main-text h2 {
+  max-width: 932px;
+  padding-top: 140px;
+  @include textStyle(700, 48px, 48px, center);
+}
+
+.h2-div {
+  @include flexStyle(flex, center, center);
+}
+
+.main-text h2 a {
+  color: #79c8c7;
+}
+
+.box {
+  width: 350px;
+  padding-top: 92px;
+  background-image: url("../images/qoshtirnoq.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position-y: 55px;
+}
+
+.box h5 {
+  @include textStyle(600, 15px, 25px, center);
+}
+
+.box h6 {
+  color: #79c8c7;
+  padding-top: 24px;
+  @include textStyle(700, 18px, 28px, center);
+}
+
+.box p {
+  font-style: italic;
+  @include textStyle(500, 13px, 18px, center);
+}
+
+.box-img {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.stories-wrapper {
+  padding-bottom: 140px;
+  @include flexStyle(flex, start, space-between);
+}
+
+.stories {
+  background-image: url("../images/stories-top-img-bg.svg"),
+    url("../images/bg-bottom-stories.svg");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+
+@media (max-width: 952px) {
+  .stories-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 140px;
+  }
+  .h2-div {
+    @include flexStyle(flex, center, center);
+  }
+  .main-text h2 {
+    padding-top: 0;
+    padding-top: 100px;
+  }
+  .main-text h2 {
+    @include textStyle(700, 32px, 32px, center);
+  }
+}
+
+@media (max-width: 433px) {
+  .main-text h2 {
+    padding-top: 100px;
+  }
+}
